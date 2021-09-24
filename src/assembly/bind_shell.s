@@ -74,7 +74,6 @@ main:
   syscall
   call exit
 
-exit:
-  mov     ebx,0    
-  mov     eax,60   
-  int     0x80
+exit:    
+  mov rax,60   
+  syscall
