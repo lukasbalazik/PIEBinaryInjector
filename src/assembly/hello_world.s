@@ -17,9 +17,8 @@ main:
   syscall
 
   call exit
-exit:
-  mov     ebx,0    
-  mov     eax,60   
+exit:    
+  mov     rax,1   
   int     0x80
 
 hello: db "hello world",33,10
