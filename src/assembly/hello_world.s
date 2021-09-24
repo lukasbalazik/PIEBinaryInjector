@@ -18,8 +18,8 @@ main:
 
   call exit
 exit:    
-  mov     rax,1   
-  int     0x80
+  mov rax,60   
+  syscall
 
 hello: db "hello world",33,10
 len : dd 13
