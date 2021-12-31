@@ -41,6 +41,7 @@ Then we connect our payload to our base payload and insert it into the binary as
 ## Usage
 
 ```bash
+$ sudo apt install libelf-dev
 $ make
 $ nasm -f bin -o payload.bin src/assembly/hello_world.s
 $ sudo cp /bin/ls .
